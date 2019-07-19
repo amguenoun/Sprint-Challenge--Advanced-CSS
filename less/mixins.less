@@ -1,7 +1,40 @@
 // Mixins Here
-.flex(@direction, @justify, @align){
+.flex(@direction:row, @justify:center, @align:center){
     display:flex;
     flex-direction:@direction;
     justify-content:@justify;
     align-items:@align;
+}
+
+.buttonMake(@bgColor:black, @fontColor:white, @width:40%){
+    font-size: 1.6rem;
+    border: 1px solid @bgColor;
+    background: @bgColor;
+    color: @fontColor;
+    width: @width;
+    text-align: center;
+    padding: 2% 0%;
+    border-radius: 10px;
+    cursor:pointer;
+}
+
+.colorFlip(@bgColor, @fontColor){
+    animation-name:colorFlip;
+    animation-duration:2s;
+    animation-iteration-count: infinite;
+
+    @keyframes colorFlip{
+        0%{
+            background: @bgColor;
+            color: @fontColor;
+        }
+        50%{
+            background: @fontColor;
+            color: @bgColor;
+        }
+        100%{
+            background: @bgColor;
+            color: @fontColor;
+        }
+    }
 }

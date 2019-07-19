@@ -165,7 +165,7 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: #d9dee2;
+  background: #e8eaed;
 }
 nav h1 {
   font-size: 4rem;
@@ -193,6 +193,9 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home .intro img {
+  border-radius: 10px;
 }
 .home .intro h2 {
   padding: 15px;
@@ -235,6 +238,36 @@ footer {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+.home .walk .walk-text .btn {
+  font-size: 1.6rem;
+  border: 1px solid black;
+  background: black;
+  color: white;
+  width: 40%;
+  text-align: center;
+  padding: 2% 0%;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.home .walk .walk-text .btn:hover {
+  animation-name: colorFlip;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+@keyframes colorFlip {
+  0% {
+    background: black;
+    color: white;
+  }
+  50% {
+    background: white;
+    color: black;
+  }
+  100% {
+    background: black;
+    color: white;
+  }
 }
 .home .walk .walk-img {
   width: 46%;
