@@ -159,6 +159,8 @@ p {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+  text-shadow: 2px 2px 2px lightskyblue;
+  background: #c8cbd5;
 }
 nav {
   display: flex;
@@ -167,6 +169,7 @@ nav {
   align-items: center;
   background: rgba(246, 246, 246, 0.5);
   border: 1px solid #F1F1F1;
+  box-shadow: 5px 5px 10px #888888;
 }
 nav h1 {
   font-size: 4rem;
