@@ -1,9 +1,14 @@
 // Home Content
 
 .home {
+  margin-top:6.5%;
+
+  @media @mobile{
+    margin-top:16.8%;
+  }
 
   .intro {
-    margin-top:10.5%;
+    
 
     img{
       border-radius: 10px;
@@ -16,10 +21,6 @@
 
     p {
       padding:0 15px;
-    }
-
-    @media @mobile{
-      margin-top:16.8%;
     }
   
   }
@@ -78,10 +79,10 @@
       }
 
       .btn {
-        .buttonMake(black, white, 40%);
+        .buttonMake(@btn-bg-color, white, 40%);
 
         &:hover{
-          .colorFlip(black,white);
+          .colorFlip(@btn-bg-color,white);
         }
       }
 
@@ -115,6 +116,45 @@
       .walk-img{
         width:100%;
         margin:0%;
+      }
+    }
+  }
+
+  //Contact Page Styles
+  .contact-header{
+    .flex(row-reverse, center, center);
+
+    div{
+      width:45%;
+    }
+    img{
+      max-width:100%;
+    }
+  }
+
+  .contact-form{
+    .flex(column, center, center);
+    font-size:1.6rem;
+    border-top: 1px dashed @river-bend;
+    margin-top:2%;
+
+    .text-box{
+      .flex(row, space-between, center);
+      width:30%;
+      margin: 1% 0%;
+    }
+
+    .textSpecial{
+      .flex(column, center, center);
+      margin:2% 0%;
+    }
+
+    .contact-btn{
+      .buttonMake(@btn-bg-color, white, 40%);
+      margin-bottom:2%;
+
+      &:hover{
+        .colorFlip(@btn-bg-color,white);
       }
     }
   }

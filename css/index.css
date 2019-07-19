@@ -208,8 +208,13 @@ footer {
   justify-content: center;
   align-items: center;
 }
-.home .intro {
-  margin-top: 10.5%;
+.home {
+  margin-top: 6.5%;
+}
+@media (max-width:500px) {
+  .home {
+    margin-top: 16.8%;
+  }
 }
 .home .intro img {
   border-radius: 10px;
@@ -220,11 +225,6 @@ footer {
 }
 .home .intro p {
   padding: 0 15px;
-}
-@media (max-width:500px) {
-  .home .intro {
-    margin-top: 16.8%;
-  }
 }
 .home .space-images {
   display: flex;
@@ -273,8 +273,8 @@ footer {
 }
 .home .walk .walk-text .btn {
   font-size: 1.6rem;
-  border: 1px solid black;
-  background: black;
+  border: 1px solid #22283A;
+  background: #22283A;
   color: white;
   width: 40%;
   text-align: center;
@@ -290,15 +290,15 @@ footer {
 }
 @keyframes colorFlip {
   0% {
-    background: black;
+    background: #22283A;
     color: white;
   }
   50% {
     background: white;
-    color: black;
+    color: #22283A;
   }
   100% {
-    background: black;
+    background: #22283A;
     color: white;
   }
 }
@@ -326,5 +326,73 @@ footer {
   .home .walk .walk-img {
     width: 100%;
     margin: 0%;
+  }
+}
+.home .contact-header {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+}
+.home .contact-header div {
+  width: 45%;
+}
+.home .contact-header img {
+  max-width: 100%;
+}
+.home .contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.6rem;
+  border-top: 1px dashed #454A59;
+  margin-top: 2%;
+}
+.home .contact-form .text-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 30%;
+  margin: 1% 0%;
+}
+.home .contact-form .textSpecial {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2% 0%;
+}
+.home .contact-form .contact-btn {
+  font-size: 1.6rem;
+  border: 1px solid #22283A;
+  background: #22283A;
+  color: white;
+  width: 40%;
+  text-align: center;
+  padding: 2% 0%;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-bottom: 2%;
+}
+.home .contact-form .contact-btn:hover {
+  animation-name: colorFlip;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+@keyframes colorFlip {
+  0% {
+    background: #22283A;
+    color: white;
+  }
+  50% {
+    background: white;
+    color: #22283A;
+  }
+  100% {
+    background: #22283A;
+    color: white;
   }
 }
