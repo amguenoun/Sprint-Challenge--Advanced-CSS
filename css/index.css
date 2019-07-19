@@ -165,7 +165,7 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: #F6F6F6;
+  background: rgba(246, 246, 246, 0.5);
   border: 1px solid #F1F1F1;
 }
 nav h1 {
@@ -192,6 +192,12 @@ nav .links a {
     justify-content: space-around;
   }
 }
+.fixed {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
@@ -202,6 +208,9 @@ footer {
   justify-content: center;
   align-items: center;
 }
+.home .intro {
+  margin-top: 10.5%;
+}
 .home .intro img {
   border-radius: 10px;
   width: 100%;
@@ -211,6 +220,11 @@ footer {
 }
 .home .intro p {
   padding: 0 15px;
+}
+@media (max-width:500px) {
+  .home .intro {
+    margin-top: 16.8%;
+  }
 }
 .home .space-images {
   display: flex;
