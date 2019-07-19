@@ -340,6 +340,19 @@ footer {
 .home .contact-header img {
   max-width: 100%;
 }
+@media (max-width:500px) {
+  .home .contact-header {
+    flex-direction: column;
+  }
+  .home .contact-header div {
+    width: 100%;
+    text-align: center;
+    margin: 2% 0%;
+  }
+  .home .contact-header .contact-header-img {
+    width: 90%;
+  }
+}
 .home .contact-form {
   display: flex;
   flex-direction: column;
