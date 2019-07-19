@@ -1,11 +1,13 @@
 // Navigation code here
 nav{
     .flex(column, center, center);
-    background: darken(@porcelain, 5%);
-
+    background: @nav-bg;
+    border:1px solid @nav-border;
+    
     h1{
         font-size:4rem;
         margin-top:2%;
+        color:@nav-font;
     }
 
     .links{
@@ -14,9 +16,16 @@ nav{
 
         a{
             text-decoration:none;
-            color:black;
             margin:2% 0%;
             font-size:1.6rem;
+            color:@nav-font;
+        }
+    }
+
+    @media @mobile{
+        .links{
+            width:100%;
+            justify-content:space-around;
         }
     }
 }
