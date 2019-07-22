@@ -1,1 +1,39 @@
 // Navigation code here
+nav{
+    .flex(column, center, center);
+    background:rgba(246, 246, 246, .5);
+    border:1px solid @nav-border;
+    box-shadow: 5px 5px 10px #888888;
+    
+    h1{
+        font-size:4rem;
+        margin-top:2%;
+        color:@nav-font;
+    }
+
+    .links{
+        .flex(row,space-between, center);
+        width:50%;
+
+        a{
+            text-decoration:none;
+            margin:2% 0%;
+            font-size:1.6rem;
+            color:@nav-font;
+        }
+    }
+
+    @media @mobile{
+        .links{
+            width:100%;
+            justify-content:space-around;
+        }
+    }
+}
+
+.fixed{
+    position:fixed;
+    width:100%;
+    top:0;
+    left:0;
+}
